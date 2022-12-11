@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+Hero.delete_all
+
+# avangers = ["Homem de Ferro", "Doutor Estranho", "Hulk", "Thor", "Viuva Negra", "Homem Aranha", "Gavião Arqueiro"]
+
+50.times do |i|
+  Hero.create name: Faker::Superhero.name
+end
